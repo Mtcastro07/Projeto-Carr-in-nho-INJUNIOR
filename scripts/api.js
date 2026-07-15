@@ -35,3 +35,16 @@ export async function listarCarros(opcoes) {
     throw error;
   }
 }
+
+export async function buscarCarro(id) {
+  try {
+    let response = await fetch(`http://localhost:3001/carros/${id}`);
+    if (!response.ok) {
+      throw new error("Falha na requisição");
+    }
+    let dados = await response.json();
+    return dados;
+  } catch (error) {
+    throw new error();
+  }
+}

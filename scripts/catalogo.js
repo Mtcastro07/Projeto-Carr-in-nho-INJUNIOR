@@ -51,6 +51,11 @@ function criarCard(carro) {
   divInfos.append(name, filme, porDia, valor, buttonAlugar);
   linha.appendChild(divImg);
   linha.appendChild(divInfos);
+
+  linha.addEventListener("click", () => {
+    window.location = `individual.html?id=${carro.id}`;
+  });
+
   return linha;
 }
 
