@@ -1,0 +1,51 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #080C14;
+    color: white; 
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+header li {
+    color: #64748B;
+}
+
+header li .active {
+    background-color: #354760;
+    color: rgb(111, 111, 237); 
+    font-family: "Inter", sans-serif;
+}
+header button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1100ff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: "Inter", sans-serif;
+}
+
