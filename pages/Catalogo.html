@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo</title>
+  </head>
+  <body>
+    <main>
+      <p>Catalogo</p>
+      <h1>TODOS OS VEÍCULOS</h1>
+      <p><span class="quantidade">0</span> veiculos encontrados</p>
+      <div class="filtros">
+        <input
+          class="buscador"
+          type="text"
+          placeholder="Buscar por nome ou obra..."
+        />
+        <div class="btns-categories" style="display: flex; flex-direction: row">
+          <button class="btn-category" id="">Todos</button>
+          <button class="btn-category" id="disponivel">Disponivel</button>
+          <button class="btn-category" id="indisponivel">Indisponivel</button>
+          <button class="btn-category" id="filme">Filme</button>
+          <button class="btn-category" id="série">Série</button>
+          <button class="btn-category" id="desenho">Desenho</button>
+        </div>
+      </div>
+      <ul class="list-cars"></ul>
+      <div class="pages" style="display: flex; flex-direction: row">
+        <button class="page">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="page">4</button>
+        <button class="page">5</button>
+      </div>
+    </main>
+    <script type="module" src="../scripts/catalogo.js"></script>
+  </body>
+</html>
