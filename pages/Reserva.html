@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/nav.css" />
+    <title>Reserva</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="/assets/image.png" width="64" />
+        <h1>Carr{IN}hos</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Início</a></li>
+          <li><a href="Catalogo.html">Catálogo</a></li>
+          <li><a href="Reservas.html" class="active">Reservas</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button><img src="/assets/image.png" width="32" />Explorar</button>
+    </header>
+    <main>
+      <p>Reserva</p>
+      <h1>RERSERVAR VEÍCULO</h1>
+      <section class="reserve">
+        <div class="menu">
+          <div class="form-personal">
+            <h5>Dados Pessoais</h5>
+            <div class="inputs">
+              <div>
+                <label>NOME COMPLETO</label>
+                <input type="text" placeholder="Fulado da Silva" />
+              </div>
+              <div>
+                <label>CPF</label>
+                <input type="text" placeholder="000.000.000-00" />
+              </div>
+              <div>
+                <label>E-MAIL</label>
+                <input type="email" placeholder="Seu email" />
+              </div>
+              <div>
+                <label>TELEFONE</label>
+                <input type="text" placeholder="(99) 99999-9999" />
+              </div>
+              <div class="form-data">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-reserve">
+            <h5>Dados da Reserva</h5>
+            <div class="inputs">
+              <div>
+                <label>Veículo</label>
+                <input type="text" placeholder="Veículo" disabled />
+              </div>
+              <div>
+                <label>Local de Retirada</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label>DATA DE RETIRADA</label>
+                <input type="date" class="retirada" />
+              </div>
+              <div>
+                <label>DATA DE DEVOLUÇÃO</label>
+                <input type="date" class="devolucao" placeholder="" />
+              </div>
+            </div>
+            <button class="btn-reservar">Confirmar Reserva</button>
+          </div>
+        </div>
+        <div class="resume">
+          <p>RESUMO</p>
+          <div class="image">
+            <img class="img" />
+            <h6 class="name">nome do veiculo</h6>
+          </div>
+          <div class="diary">
+            <p>Diária</p>
+            <p class="value">0</p>
+          </div>
+          <div class="day">
+            <p>Dias</p>
+            <p class="days-count">0</p>
+          </div>
+          <div class="total">
+            <p>Total</p>
+            <p class="total-value">0</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="../scripts/reserva.js"></script>
+  </body>
+</html>
