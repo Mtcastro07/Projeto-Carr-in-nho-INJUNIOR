@@ -2,6 +2,8 @@ import { listarCarros } from "../scripts/api.js";
 let listaCarros = document.querySelector(".list-cars");
 let botoesCategorias = document.querySelectorAll(".btn-category");
 let buscar = document.querySelector(".buscador");
+let quantidade = document.querySelector(".quantidade");
+let paginacao = document.querySelectorAll(".page");
 
 function criarCard(carro) {
   let linha = document.createElement("li");
@@ -59,53 +61,55 @@ function renderizarLista(vetor) {
   });
 }
 
-function filtroCategoria(categoria, array) {
-  let arrayCategorizado = array.filter((elemento) => {
-    return elemento.categoria == categoria;
-  });
-  return arrayCategorizado;
-  console.log(arrayCategorizado);
-}
+let opcoes = {
+  pagina: 1,
+  nome: "",
+  disponibilidade: "",
+  filme: "",
+  categoria: "",
+};
 
-let carros = await listarCarros();
+let carros = await listarCarros(opcoes);
+quantidade.innerText = carros.length;
 renderizarLista(carros);
 
 botoesCategorias.forEach((button) => {
-  button.addEventListener("click", () => {
-    let buttonID = button.id;
+  button.addEventListener("click", async () => {
     if (
-      buttonID != "todos" &&
-      buttonID != "indisponivel" &&
-      buttonID != "disponivel"
+      button.id != "filme" &&
+      button.id != "série" &&
+      button.id != "desenho"
     ) {
-      console.log(buttonID);
-      let arrayCategorizado = filtroCategoria(buttonID, carros);
-      renderizarLista(arrayCategorizado);
-    } else if (buttonID == "indisponivel") {
-      let arrayIndisponivel = carros.filter((elemento) => {
-        return elemento.status_disponibilidade != "disponivel";
-      });
-      renderizarLista(arrayIndisponivel);
-    } else if (buttonID == "disponivel") {
-      let arrayDisponivel = carros.filter((elemento) => {
-        return elemento.status_disponibilidade == "disponivel";
-      });
-      renderizarLista(arrayDisponivel);
+      opcoes.disponibilidade = button.id;
+      opcoes.categoria = "";
+      opcoes.filme = "";
+      opcoes.nome = "";
+      opcoes.pagina = 1;
     } else {
-      renderizarLista(carros);
+      opcoes.categoria = button.id;
+      opcoes.filme = "";
+      opcoes.pagina = 1;
+      opcoes.nome = "";
+      opcoes.disponibilidade = "";
     }
+    carros = await listarCarros(opcoes);
+    quantidade.innerText = carros.length;
+    renderizarLista(carros);
   });
 });
 
-buscar.addEventListener("input", () => {
-  let arrayBuscado = carros.filter((elemento) => {
-    return (
-      elemento.nome.toLowerCase().includes(buscar.value.toLowerCase()) ||
-      elemento.universo_origem
-        .toLowerCase()
-        .includes(buscar.value.toLowerCase()) ||
-      elemento.categoria.toLowerCase().includes(buscar.value.toLowerCase())
-    );
+buscar.addEventListener("input", async () => {
+  opcoes.nome = buscar.value;
+  carros = await listarCarros(opcoes);
+  quantidade.innerText = carros.length;
+  renderizarLista(carros);
+});
+
+paginacao.forEach((page) => {
+  page.addEventListener("click", async () => {
+    opcoes.pagina = page.innerText;
+    carros = await listarCarros(opcoes);
+    quantidade.innerText = carros.length;
+    renderizarLista(carros);
   });
-  renderizarLista(arrayBuscado);
 });

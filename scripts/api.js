@@ -1,13 +1,37 @@
-export async function listarCarros() {
+export async function listarCarros(opcoes) {
   try {
-    let resposta = await fetch("http://localhost:3001/carros");
-    if (!resposta.ok) {
-      throw new Error("Erro na requisição da API");
+    let url = "http://localhost:3001/carros";
+
+    let params = new URLSearchParams();
+
+    params.append("_page", opcoes.pagina);
+    params.append("_limit", 8);
+    if (opcoes.disponibilidade != "") {
+      if (opcoes.disponibilidade == "disponivel") {
+        params.append("status_disponibilidade", opcoes.disponibilidade);
+      } else {
+        params.append("status_disponibilidade_ne", "disponivel");
+      }
+    }
+    if (opcoes.categoria != "") {
+      params.append("categoria_like", opcoes.categoria);
+    }
+    if (opcoes.nome != "") {
+      params.append("nome_like", opcoes.nome);
+    }
+    if (opcoes.filme != "") {
+      params.append("universo_origem_like", opcoes.filme);
     }
 
-    let dados = await resposta.json();
+    params = params.toString();
+
+    let response = await fetch(url + "?" + params);
+    if (!response.ok) {
+      throw new Error("Erro na requisição");
+    }
+    let dados = await response.json();
     return dados;
   } catch (error) {
-    throw new Error("Erro ao rodar a requisição");
+    throw error;
   }
 }

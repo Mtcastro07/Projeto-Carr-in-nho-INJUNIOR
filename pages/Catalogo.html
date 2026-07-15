@@ -8,7 +8,7 @@
     <main>
       <p>Catalogo</p>
       <h1>TODOS OS VEÍCULOS</h1>
-      <p>9 veiculos encontrados</p>
+      <p><span class="quantidade">0</span> veiculos encontrados</p>
       <div class="filtros">
         <input
           class="buscador"
@@ -16,7 +16,7 @@
           placeholder="Buscar por nome ou obra..."
         />
         <div class="btns-categories" style="display: flex; flex-direction: row">
-          <button class="btn-category" id="todos">Todos</button>
+          <button class="btn-category" id="">Todos</button>
           <button class="btn-category" id="disponivel">Disponivel</button>
           <button class="btn-category" id="indisponivel">Indisponivel</button>
           <button class="btn-category" id="filme">Filme</button>
@@ -25,6 +25,13 @@
         </div>
       </div>
       <ul class="list-cars"></ul>
+      <div class="pages" style="display: flex; flex-direction: row">
+        <button class="page">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="page">4</button>
+        <button class="page">5</button>
+      </div>
     </main>
     <script type="module" src="../scripts/catalogo.js"></script>
   </body>
