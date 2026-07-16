@@ -32,22 +32,29 @@
             <div class="inputs">
               <div>
                 <label>NOME COMPLETO</label>
-                <input type="text" placeholder="Fulado da Silva" />
+                <input id="nome" type="text" placeholder="Fulado da Silva" />
               </div>
               <div>
                 <label>CPF</label>
-                <input type="text" placeholder="000.000.000-00" />
+                <input
+                  id="CPF"
+                  type="text"
+                  placeholder="000.000.000-00"
+                  maxlength="9"
+                />
               </div>
               <div>
                 <label>E-MAIL</label>
-                <input type="email" placeholder="Seu email" />
+                <input id="email" type="email" placeholder="Seu email" />
               </div>
               <div>
                 <label>TELEFONE</label>
-                <input type="text" placeholder="(99) 99999-9999" />
-              </div>
-              <div class="form-data">
-                <div></div>
+                <input
+                  id="telefone"
+                  type="text"
+                  placeholder="(99) 99999-9999"
+                  maxlength="14"
+                />
               </div>
             </div>
           </div>
@@ -56,22 +63,29 @@
             <div class="inputs">
               <div>
                 <label>Veículo</label>
-                <input type="text" placeholder="Veículo" disabled />
+                <input
+                  id="veiculo"
+                  type="text"
+                  placeholder="Veículo"
+                  disabled
+                />
               </div>
               <div>
                 <label>Local de Retirada</label>
-                <input type="text" />
+                <input type="text" id="local" />
               </div>
               <div>
                 <label>DATA DE RETIRADA</label>
-                <input type="date" class="retirada" />
+                <input type="date" id="retirada" />
               </div>
               <div>
                 <label>DATA DE DEVOLUÇÃO</label>
-                <input type="date" class="devolucao" placeholder="" />
+                <input type="date" id="devolucao" />
               </div>
             </div>
-            <button class="btn-reservar">Confirmar Reserva</button>
+            <button type="button" class="btn-reservar">
+              Confirmar Reserva
+            </button>
           </div>
         </div>
         <div class="resume">
