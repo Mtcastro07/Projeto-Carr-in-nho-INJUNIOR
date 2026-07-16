@@ -102,8 +102,11 @@ function renderizarImagens(carros) {
   });
 }
 
+let numeroAleatorio = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+let numeroAleatorio2 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+
 let homeDestaques = {
-  pagina: 1,
+  pagina: numeroAleatorio,
   limite: 4,
   nome: "",
   disponibilidade: "",
@@ -112,7 +115,7 @@ let homeDestaques = {
 };
 
 let home = {
-  pagina: 3,
+  pagina: numeroAleatorio2,
   limite: 4,
   nome: "",
   disponibilidade: "",
