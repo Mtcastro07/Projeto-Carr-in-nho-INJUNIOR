@@ -5,7 +5,7 @@ export async function listarCarros(opcoes) {
     let params = new URLSearchParams();
 
     params.append("_page", opcoes.pagina);
-    params.append("_limit", 8);
+    params.append("_limit", opcoes.limite);
     if (opcoes.disponibilidade != "") {
       if (opcoes.disponibilidade == "disponivel") {
         params.append("status_disponibilidade", opcoes.disponibilidade);
