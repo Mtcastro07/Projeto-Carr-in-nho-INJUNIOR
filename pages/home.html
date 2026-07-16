@@ -1,59 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Styles/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Styles/home.css" />
     <title>Alugue um Carr{IN}nho</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <img src="/assets/image.png" width="64">
-            <h1>Carr{IN}hos</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="home.html" class="active">Início</a></li>
-                <li><a href="Catalogo.html">Catálogo</a></li>
-                <li><a href="Reservas.html">Reservas</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="Contato.html">Contato</a></li>
-            </ul>
-        </nav>
-        <button><img src="/assets/image.png" width="32">Explorar</button>
+      <div>
+        <img src="/assets/image.png" width="64" />
+        <h1>Carr{IN}hos</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="active">Início</a></li>
+          <li><a href="Catalogo.html">Catálogo</a></li>
+          <li><a href="Reservas.html">Reservas</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="Contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <button><img src="/assets/image.png" width="32" />Explorar</button>
     </header>
 
     <main>
-        <section class="welcome">
+      <section class="welcome">
+        <div>
+          <p>A locadora do universo fictício</p>
+          <h1>DIRIJA OS <span>VEÍCULOS</span> MAIS FAMOSOS</h1>
+          <p>
+            Alugue carros lendários de filmes, séries e desenhos animados. Uma
+            experiência cinematográfica real
+          </p>
+          <div>
+            <button>Explorar veículos</button>
+            <button>Saiba mais</button>
+          </div>
+          <div>
             <div>
-                <p>A locadora do universo fictício</p>
-                <h1>DIRIJA OS <span>VEÍCULOS</span> MAIS FAMOSOS</h1>
-                <p>Alugue carros lendários de filmes, séries e desenhos animados. Uma experiência cinematográfica real</p>
-                <div>
-                    <button>Explorar veículos</button>
-                    <button>Saiba mais</button>
-                </div>
-                <div>
-                    <div>
-                        <h1>8+ </h1>
-                        <p>veículos icônicos</p>
-                    </div>
-                    <div>
-                        <h1>24h </h1>
-                        <p>suporte ativo</p>
-                    </div>
-                    <div>
-                        <h1>100%</h1>
-                        <p>experiência única</p>
-                    </div>
-                </div>
+              <h1>8+</h1>
+              <p>veículos icônicos</p>
             </div>
-
-        </section>
+            <div>
+              <h1>24h</h1>
+              <p>suporte ativo</p>
+            </div>
+            <div>
+              <h1>100%</h1>
+              <p>experiência única</p>
+            </div>
+          </div>
+        </div>
+        <div class="cars-display">
+          <ul class="cars"></ul>
+        </div>
+      </section>
+      <section class="destaques">
+        <p>DESTAQUES</p>
+        <h3>VEÍCULOS EM DESTAQUE</h3>
+        <div class="destaques-grid">
+          <ul class="cards"></ul>
+        </div>
+      </section>
     </main>
-    
-</body>
+    <script type="module" src="/scripts/home.js"></script>
+  </body>
 </html>

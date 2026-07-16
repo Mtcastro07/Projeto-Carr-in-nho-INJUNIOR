@@ -1,16 +1,11 @@
 import { listarCarros } from "../scripts/api.js";
-let listaCarros = document.querySelector(".list-cars");
-let botoesCategorias = document.querySelectorAll(".btn-category");
-let buscar = document.querySelector(".buscador");
-let quantidade = document.querySelector(".quantidade");
-let paginacao = document.querySelectorAll(".page");
 
-<<<<<<< HEAD
-//Função utilizada para criar os card
+let homeCardsDestaques = document.querySelector(".cards");
+let homeCars = document.querySelector(".cars");
+
+console.log(homeCardsDestaques);
+
 function criarCard(carro) {
-=======
-export function criarCard(carro) {
->>>>>>> matheusBranch
   let linha = document.createElement("li");
   linha.classList.add("card");
 
@@ -77,63 +72,59 @@ export function criarCard(carro) {
   return linha;
 }
 
-function renderizarLista(vetor) {
-  listaCarros.innerHTML = "";
-  vetor.forEach((elemento) => {
-    listaCarros.appendChild(criarCard(elemento));
+function criarCardSimples(carro) {
+  let li = document.createElement("li");
+  li.classList.add("simple-card");
+  let imagem = document.createElement("img");
+  imagem.src = carro.url_imagem;
+  imagem.classList.add("simple-img");
+  let nome = document.createElement("h5");
+  nome.innerText = carro.nome;
+  nome.classList.add("simple-name");
+  let status = document.createElement("p");
+  status.classList.add("simple-status");
+  status.innerHTML = carro.status_disponibilidade;
+  li.append(imagem, nome, status);
+  return li;
+}
+
+function renderizarImagensSimples(carros) {
+  homeCars.innerHTML = "";
+  carros.forEach((carro) => {
+    homeCars.appendChild(criarCardSimples(carro));
   });
 }
 
-let opcoes = {
-  pagina: 1,
-  limite: 8,
+function renderizarImagens(carros) {
+  homeCardsDestaques.innerHTML = "";
+  carros.forEach((destaque) => {
+    homeCardsDestaques.appendChild(criarCard(destaque));
+  });
+}
+
+let numeroAleatorio = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+let numeroAleatorio2 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+
+let homeDestaques = {
+  pagina: numeroAleatorio,
+  limite: 4,
   nome: "",
   disponibilidade: "",
   filme: "",
   categoria: "",
 };
 
-let carros = await listarCarros(opcoes);
-quantidade.innerText = carros.length;
-renderizarLista(carros);
+let home = {
+  pagina: numeroAleatorio2,
+  limite: 4,
+  nome: "",
+  disponibilidade: "",
+  filme: "",
+  categoria: "",
+};
 
-botoesCategorias.forEach((button) => {
-  button.addEventListener("click", async () => {
-    if (
-      button.id != "filme" &&
-      button.id != "série" &&
-      button.id != "desenho"
-    ) {
-      opcoes.disponibilidade = button.id;
-      opcoes.categoria = "";
-      opcoes.filme = "";
-      opcoes.nome = "";
-      opcoes.pagina = 1;
-    } else {
-      opcoes.categoria = button.id;
-      opcoes.filme = "";
-      opcoes.pagina = 1;
-      opcoes.nome = "";
-      opcoes.disponibilidade = "";
-    }
-    carros = await listarCarros(opcoes);
-    quantidade.innerText = carros.length;
-    renderizarLista(carros);
-  });
-});
+let destaques = await listarCarros(homeDestaques);
+let carsHome = await listarCarros(home);
 
-buscar.addEventListener("input", async () => {
-  opcoes.nome = buscar.value;
-  carros = await listarCarros(opcoes);
-  quantidade.innerText = carros.length;
-  renderizarLista(carros);
-});
-
-paginacao.forEach((page) => {
-  page.addEventListener("click", async () => {
-    opcoes.pagina = page.innerText;
-    carros = await listarCarros(opcoes);
-    quantidade.innerText = carros.length;
-    renderizarLista(carros);
-  });
-});
+renderizarImagensSimples(carsHome);
+renderizarImagens(destaques);
