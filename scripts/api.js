@@ -137,3 +137,22 @@ export async function listarReservas() {
     throw new Error(error);
   }
 }
+
+export async function atualizarReserva(id, estado) {
+  console.log(id, "id do card");
+  console.log(estado, "estado do card");
+
+  const response = await fetch(`http://localhost:3001/reservas/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      status: estado,
+    }),
+  });
+  if (!response.ok) {
+    console.error("Error em atualizarReserva");
+    throw Error("Erro na requisição atualizarReserva");
+  }
+}

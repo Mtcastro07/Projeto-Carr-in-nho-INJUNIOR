@@ -4,8 +4,8 @@ import { reservarLocatario } from "../scripts/api.js";
 
 let dataRetiradaValue = document.querySelector("#retirada");
 let dataDevolucaoValue = document.querySelector("#devolucao");
-dataRetiradaValue.value = "2026-07-19";
-dataDevolucaoValue.value = "2026-07-19";
+dataRetiradaValue.value = new Date();
+dataDevolucaoValue.value = new Date();
 
 let parametro = new URLSearchParams(window.location.search);
 let id = parametro.get("id");

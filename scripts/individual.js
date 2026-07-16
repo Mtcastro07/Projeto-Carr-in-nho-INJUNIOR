@@ -50,6 +50,14 @@ buttonReservar.addEventListener("click", (evento) => {
   window.location = `Reserva.html?id=${carro.id}`;
 });
 
+if (carro.status_disponibilidade != "disponivel") {
+  buttonReservar.innerText = "Indisponivel";
+  buttonReservar.disabled = true;
+} else {
+  buttonReservar.innerText = "Reservar Agora";
+  buttonReservar.disabled = false;
+}
+
 let buttonAgenda = document.createElement("button");
 buttonAgenda.classList.add("btn-calendar");
 buttonAgenda.innerHTML =

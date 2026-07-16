@@ -6,13 +6,9 @@
       "universo_origem": "Carros (Pixar)",
       "ano_obra": 2006,
       "url_imagem": "https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png",
-      "status_disponibilidade": "alugado",
+      "status_disponibilidade": "disponivel",
       "valor_aluguel_dia": 850,
-      "locatario": {
-        "nome": "Matheus",
-        "email": "asdfasfasfsfasf@gmail.com",
-        "telefone": "34234243243243"
-      },
+      "locatario": null,
       "categoria": "desenho"
     },
     {
@@ -21,16 +17,9 @@
       "universo_origem": "Carros (Pixar)",
       "ano_obra": 2006,
       "url_imagem": "https://static.wikia.nocookie.net/pixar/images/e/ee/Mater.png/revision/latest?cb=20191003010831&path-prefix=pt",
-      "status_disponibilidade": "alugado",
+      "status_disponibilidade": "disponivel",
       "valor_aluguel_dia": 400,
-      "locatario": {
-        "nome": "londflkjnhdf",
-        "documento": "234324324",
-        "email": "fsadfadf@gmail.com",
-        "data_inicio_aluguel": "2026-07-19",
-        "data_devolucao_prevista": "2026-07-19",
-        "telefone": "43234324243243"
-      },
+      "locatario": null,
       "categoria": "desenho"
     },
     {
@@ -646,5 +635,42 @@
       "categoria": "série"
     }
   ],
-  "reservas": []
+  "reservas": [
+    {
+      "carId": 1,
+      "nome": "Relâmpago McQueen",
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png",
+      "local": "dasdsadawddadadasda",
+      "status": "cancelado",
+      "duracao": "4",
+      "valor_total": "3400",
+      "data_inicio_aluguel": "2026-07-19",
+      "data_devolucao_prevista": "2026-07-23",
+      "id": 1
+    },
+    {
+      "carId": 4,
+      "nome": "Sally Carrera",
+      "imagem": "https://static.wikia.nocookie.net/carros/images/e/e1/Sally_Carrera.png/revision/latest?cb=20200122035435&path-prefix=pt-br",
+      "local": "fasdafsasfasfasfsaf",
+      "status": "finalizado",
+      "duracao": "1",
+      "valor_total": "750",
+      "data_inicio_aluguel": "2026-07-06",
+      "data_devolucao_prevista": "2026-07-07",
+      "id": 2
+    },
+    {
+      "carId": 6,
+      "nome": "Batmóvel Clássico",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj6FRkg8rtL5scmZRtodBahtw2xcu1zvxCqC1_NFoVQvFatDSQIpGyw7gN&s=10",
+      "local": "gsdgsdfg",
+      "status": "finalizado",
+      "duracao": "1",
+      "valor_total": "1900",
+      "data_inicio_aluguel": "2026-07-14",
+      "data_devolucao_prevista": "2026-07-15",
+      "id": 3
+    }
+  ]
 }

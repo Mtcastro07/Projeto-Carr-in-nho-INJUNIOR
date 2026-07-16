@@ -53,8 +53,10 @@ function criarCard(carro) {
 
   if (disponibilidade.innerText != "disponivel") {
     buttonAlugar.innerText = "Indisponivel";
+    buttonAlugar.disabled = true;
   } else {
     buttonAlugar.innerText = "Alugar";
+    buttonAlugar.disabled = false;
   }
 
   divImg.append(imagem, category, disponibilidade);
