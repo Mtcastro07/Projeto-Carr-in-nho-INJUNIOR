@@ -634,5 +634,7 @@
       "locatario": null,
       "categoria": "série"
     }
-  ]
+  ],
+
+  "reservas": []
 }
