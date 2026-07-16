@@ -37,7 +37,6 @@ let divMensagemPreco = document.createElement("div");
 divMensagemPreco.append(porDia, disponibilidadeCarro);
 divPreco.appendChild(divMensagemPreco);
 divPreco.append(valorCarro);
-
 divTextContent.append(nomeCarro, tituloAnoCarro, categoriaCarro);
 divTextContent.appendChild(divPreco);
 
@@ -46,6 +45,10 @@ let divButtons = document.createElement("div");
 let buttonReservar = document.createElement("button");
 buttonReservar.classList.add("btn-reserve");
 buttonReservar.innerText = "Reservar Agora";
+buttonReservar.addEventListener("click", (evento) => {
+  evento.stopPropagation();
+  window.location = `Reserva.html?id=${carro.id}`;
+});
 
 let buttonAgenda = document.createElement("button");
 buttonAgenda.classList.add("btn-calendar");
