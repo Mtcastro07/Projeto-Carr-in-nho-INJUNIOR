@@ -156,3 +156,18 @@ export async function atualizarReserva(id, estado) {
     throw Error("Erro na requisição atualizarReserva");
   }
 }
+
+export async function receberMensagem(mensagem) {
+  const response = await fetch("http://localhost:3001/mensagens", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(mensagem),
+  });
+
+  if (!response.ok) {
+    console.log("Error em receberMensagem");
+    throw Error("Erro na requisição receber mensagem");
+  }
+}

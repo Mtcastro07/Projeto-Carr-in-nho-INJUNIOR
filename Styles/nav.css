@@ -31,6 +31,8 @@ header nav ul {
   list-style-type: none;
   text-decoration: none;
   font-family: "Inter", sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 header li {
@@ -52,6 +54,9 @@ header li a {
 }
 
 .buttonNav a.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2563eb1a;
   color: #2563eb;
   font-family: "Inter", sans-serif;
@@ -59,12 +64,6 @@ header li a {
   border-radius: 12px;
   width: 68px;
   height: 36px;
-}
-
-.buttonNav.active {
-  background-color: #354760;
-  color: rgb(111, 111, 237);
-  font-family: "Inter", sans-serif;
 }
 
 .in {
@@ -97,6 +96,7 @@ header button:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  box-sizing: none;
 }
 
 .title h2 {
