@@ -1,3 +1,10 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -13,6 +20,10 @@ header div {
   font-family: "Inter", sans-serif;
 }
 
+nav {
+  margin-right: 78px;
+}
+
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -26,19 +37,89 @@ header li {
   color: #64748b;
 }
 
-header li .active {
+header li a {
+  text-decoration: none;
+}
+
+.buttonNav a {
+  color: #64748b;
+  transition: 0.2s;
+}
+
+.buttonNav a:hover {
+  transition: 0.2s;
+  color: #3d4044;
+}
+
+.buttonNav a.active {
+  background-color: #2563eb1a;
+  color: #2563eb;
+  font-family: "Inter", sans-serif;
+  padding: 8px 16px 8px 16px;
+  border-radius: 12px;
+  width: 68px;
+  height: 36px;
+}
+
+.buttonNav.active {
   background-color: #354760;
   color: rgb(111, 111, 237);
   font-family: "Inter", sans-serif;
 }
+
+.in {
+  color: #2563eb;
+}
+
 header button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #1100ff;
+  gap: 9px;
+  background-color: #2563eb;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 16px;
   font-family: "Inter", sans-serif;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+header button:hover {
+  transition: 0.15s;
+  background-color: #3876fd;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title h2 {
+  font-family: "Inter", sans-serif;
+}
+
+.title h4 {
+  width: 115.9px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin: 24.5px 0px 24.5px 0px;
+  background-color: #1100ff;
+  justify-content: center;
+  align-items: center;
+  padding: 8.5px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.icon-explorar {
+  text-align: center;
+  justify-content: center;
 }

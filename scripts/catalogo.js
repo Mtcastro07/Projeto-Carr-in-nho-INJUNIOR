@@ -5,7 +5,7 @@ let buscar = document.querySelector(".buscador");
 let quantidade = document.querySelector(".quantidade");
 let paginacao = document.querySelectorAll(".page");
 
-export function criarCard(carro) {
+function criarCard(carro) {
   let linha = document.createElement("li");
   linha.classList.add("card");
 

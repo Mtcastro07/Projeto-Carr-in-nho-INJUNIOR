@@ -1,51 +1,86 @@
- html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #080C14;
-    color: white; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #080c14;
+  color: white;
 }
 
 header div {
-    display: flex;
-    flex-direction: row;
-    font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter", sans-serif;
 }
 
 header nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
-header li {
-    color: #64748B;
+.buttonNav a {
+  color: #64748b;
+  transition: 0.2s;
 }
 
-header li .active {
-    background-color: #354760;
-    color: rgb(111, 111, 237); 
-    font-family: "Inter", sans-serif;
+.buttonNav a:hover {
+  transition: 0.2s;
+  color: #3d4044;
+}
+
+.buttonNav.active {
+  background-color: #354760;
+  color: rgb(111, 111, 237);
+  font-family: "Inter", sans-serif;
 }
 header button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1100ff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: 0.15s;
 }
 
+header button:hover {
+  transition: 0.15s;
+  background-color: #3876fd;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title h4 {
+  width: 115.9px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin: 24.5px 0px 24.5px 0px;
+  background-color: #1100ff;
+  justify-content: center;
+  align-items: center;
+  padding: 8.5px;
+  border-radius: 12px;
+}
