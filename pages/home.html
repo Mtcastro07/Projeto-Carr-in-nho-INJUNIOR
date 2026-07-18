@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="/Styles/home.css" />
     <link rel="stylesheet" href="/Styles/nav.css" />
+    <link rel="stylesheet" href="/Styles/destaques.css" />
     <title>Alugue um Carr{IN}nho</title>
   </head>
   <body>
@@ -118,8 +119,8 @@
             experiência cinematográfica real
           </p>
           <div>
-            <button>Explorar veículos</button>
-            <button>Saiba mais</button>
+            <button class="btn-explorarMais">Explorar veículos</button>
+            <button class="btn-saiba-mais">Saiba mais</button>
           </div>
           <div>
             <div>
@@ -127,12 +128,12 @@
               <p>veículos icônicos</p>
             </div>
             <div>
-              <h1>24h</h1>
-              <p>suporte ativo</p>
-            </div>
-            <div>
               <h1>100%</h1>
               <p>experiência única</p>
+            </div>
+            <div>
+              <h1>24/7</h1>
+              <p>suporte ativo</p>
             </div>
           </div>
         </div>
@@ -140,14 +141,177 @@
           <ul class="cars"></ul>
         </div>
       </section>
+
+      <section class="beneficios">
+        <ul class="beneficios-list">
+          <li class="beneficio-item">
+            <div class="beneficio-icon icone-azul">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 11.25C11.0711 11.25 12.75 9.57107 12.75 7.5C12.75 5.42893 11.0711 3.75 9 3.75C6.92893 3.75 5.25 5.42893 5.25 7.5C5.25 9.57107 6.92893 11.25 9 11.25Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.6 10.575L6 14.25L9 12.75L12 14.25L11.4 10.575" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>Veículos Exclusivos</h4>
+            <p>Acervo único no mundo</p>
+          </li>
+
+          <li class="beneficio-item">
+            <div class="beneficio-icon icone-azul">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1.5V4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 1.5V4.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.25 3H3.75C2.92157 3 2.25 3.67157 2.25 4.5V15C2.25 15.8284 2.92157 16.5 3.75 16.5H14.25C15.0784 16.5 15.75 15.8284 15.75 15V4.5C15.75 3.67157 15.0784 3 14.25 3Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.25 7.5H15.75" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>Reserva Online</h4>
+            <p>Simples e em minutos</p>
+          </li>
+
+          <li class="beneficio-item">
+            <div class="beneficio-icon icone-roxo">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.35 6.15V11.85L12.15 9L7.35 6.15Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>Exp. Cinematográfica</h4>
+            <p>Viva a ficção</p>
+          </li>
+
+          <li class="beneficio-item">
+            <div class="beneficio-icon icone-amarelo">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.75 1.5L2.25 10.5H8.25L8.25 16.5L15.75 7.5H9.75L9.75 1.5Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h4>Entrega Personalizada</h4>
+            <p>No seu endereço</p>
+          </li>
+        </ul>
+      </section>
+
       <section class="destaques">
-        <p>DESTAQUES</p>
-        <h3>VEÍCULOS EM DESTAQUE</h3>
+        <div class="destaques-header">
+          <div>
+            <p>DESTAQUES</p>
+            <h3>VEÍCULOS EM DESTAQUE</h3>
+          </div>
+          <a href="Catalogo.html" class="ver-todos">
+            Ver todos
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.25 3.5L8.75 7L5.25 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
         <div class="destaques-grid">
           <ul class="cards"></ul>
         </div>
       </section>
+
+      <section class="ranking">
+        <p class="eyebrow-ranking">RANKING SEMANAL</p>
+        <h3 class="ranking-title">MAIS PROCURADOS<span>DA SEMANA</span></h3>
+        <ol class="ranking-list"></ol>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-top"></div>
+      <div class="footer-content">
+          <div class="footer-brand">
+
+              <a class= "logo" href="home.html">
+                  <img src="../assets/images/mini-cart.svg" alt="Carrinho">
+                  <h2>Carr<span>{In}</span>hos</h2>
+              </a>
+
+              <p>
+                  A única plataforma de aluguel de
+                  veículos icônicos do entretenimento
+                  mundial.
+              </p>
+
+              <div class="social-media">
+
+                  <a href="https://www.instagram.com/">
+                      IG
+                  </a>
+
+                  <a href="https://x.com/">
+                      TW
+                  </a>
+
+                  <a href="https://www.youtube.com/">
+                      YT
+                  </a>
+
+                  <a href="https://www.tiktok.com/">
+                      TK
+                  </a>
+
+              </div>
+
+          </div>
+          <div class="footer-column">
+
+              <h4>PLATAFORMA</h4>
+
+              <a href="Catalogo.html">Catálogo</a>
+              <a href="Reservas.html">Minhas Reservas</a>
+              <a href="home.html">Como Funciona</a>
+              <a href="Catalogo.html">Preços</a>
+
+          </div>
+          <div class="footer-column">
+
+              <h4>EMPRESA</h4>
+
+              <a href="Sobre.html">Sobre Nós</a>
+              <a href="Contato.html">Contato</a>
+              <a href="#">Blog</a>
+              <a href="#">Parceiros</a>
+
+          </div>
+          <div class="footer-column" id="contact-items-div">
+
+              <h4>CONTATO</h4>
+
+                <div class="contact-item">
+                    <img src="../assets/images/mini-phone.svg">
+                    <span>+55 (11) 3456-7890</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="../assets/images/mini-email.svg">
+                    <span>oi@carrinhos.com.br</span>
+                </div>
+
+                <div class="contact-item">
+
+                    <img src="../assets/images/mini-local-point.svg">
+                    <span>
+                        Av. Cinematográfica, 1985
+                        <br>
+                        Vila Ficção — São Paulo, SP
+                    </span>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+
+          <span>
+              © 2025 Carr{In}hos — Todos os direitos reservados.
+          </span>
+
+          <span>
+              Projeto educacional • Veículos fictícios
+          </span>
+        </div>
+    </footer>
+
     <script type="module" src="/scripts/home.js"></script>
     <script src="/scripts/nav.js"></script>
   </body>
