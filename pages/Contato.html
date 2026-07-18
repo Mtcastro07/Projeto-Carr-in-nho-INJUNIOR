@@ -7,8 +7,9 @@
       href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="/Styles/contato.css" />
     <link rel="stylesheet" href="/Styles/nav.css" />
+
     <title>Contato</title>
   </head>
   <body>
@@ -108,9 +109,203 @@
         Explorar
       </button>
     </header>
-
-    <main></main>
-    <script type="module" src="../scripts/catalogo.js"></script>
+    <main>
+      <p class="subtitulo">FALE CONOSCO</p>
+      <h1>CONTATO</h1>
+      <div class="elementos-main">
+        <section class="form-info">
+          <form>
+            <div class="name-email">
+              <div>
+                <label>NOME</label>
+                <br />
+                <input id="nome" type="text" placeholder="Seu nome" />
+              </div>
+              <div>
+                <label>E-MAIL</label>
+                <br />
+                <input id="email" type="email" placeholder="Seu@email.com" />
+              </div>
+            </div>
+            <div>
+              <label>ASSUNTO</label>
+              <br />
+              <input
+                id="assunto"
+                type="text"
+                placeholder="Como podemos ajudar?"
+              />
+            </div>
+            <div>
+              <label>MENSAGEM</label>
+              <br />
+              <textarea
+                id="mensagem"
+                placeholder="Descreva sua dúvida ou sugestão..."
+              ></textarea>
+            </div>
+            <button type="submit" id="enviar">ENVIAR MENSAGEM</button>
+          </form>
+        </section>
+        <aside>
+          <ul class="infos">
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_1558)">
+                    <path
+                      d="M13.7499 10.575V12.45C13.7506 12.6241 13.7149 12.7964 13.6452 12.9558C13.5755 13.1153 13.4732 13.2585 13.3449 13.3762C13.2167 13.4938 13.0653 13.5834 12.9004 13.6392C12.7355 13.695 12.5608 13.7157 12.3874 13.7C10.4642 13.491 8.61677 12.8338 6.99365 11.7812C5.48354 10.8217 4.20323 9.54136 3.24365 8.03125C2.18738 6.40075 1.53005 4.54437 1.3249 2.6125C1.30928 2.43967 1.32982 2.26547 1.38521 2.10101C1.4406 1.93655 1.52963 1.78543 1.64663 1.65726C1.76362 1.5291 1.90603 1.42669 2.06477 1.35658C2.22351 1.28646 2.39511 1.25016 2.56865 1.25H4.44365C4.74696 1.24701 5.04102 1.35442 5.271 1.55221C5.50098 1.74999 5.6512 2.02465 5.69365 2.325C5.77279 2.92504 5.91955 3.5142 6.13115 4.08125C6.21524 4.30495 6.23344 4.54807 6.18359 4.7818C6.13374 5.01553 6.01794 5.23007 5.8499 5.4L5.05615 6.19375C5.94587 7.75847 7.24143 9.05403 8.80615 9.94375L9.5999 9.15C9.76983 8.98196 9.98437 8.86616 10.2181 8.81631C10.4518 8.76646 10.6949 8.78466 10.9186 8.86875C11.4857 9.08034 12.0749 9.22711 12.6749 9.30625C12.9785 9.34908 13.2558 9.502 13.454 9.73593C13.6522 9.96986 13.7575 10.2685 13.7499 10.575Z"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_1558">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">TELEFONE</p>
+                <p class="descricao-info">+55 (11) 3456-7890</p>
+              </div>
+            </li>
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_1568)">
+                    <path
+                      d="M12.5 2.5H2.5C1.80964 2.5 1.25 3.05964 1.25 3.75V11.25C1.25 11.9404 1.80964 12.5 2.5 12.5H12.5C13.1904 12.5 13.75 11.9404 13.75 11.25V3.75C13.75 3.05964 13.1904 2.5 12.5 2.5Z"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.75 4.375L8.14375 7.9375C7.95079 8.05839 7.7277 8.12251 7.5 8.12251C7.2723 8.12251 7.04921 8.05839 6.85625 7.9375L1.25 4.375"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_1568">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">E-MAIL</p>
+                <p class="descricao-info">oi@carrinhos.com.br</p>
+              </div>
+            </li>
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.87562 13.6244C9.03813 12.6206 12.5 9.37062 12.5 6.25C12.5 4.92392 11.9732 3.65215 11.0355 2.71447C10.0979 1.77678 8.82608 1.25 7.5 1.25C6.17392 1.25 4.90215 1.77678 3.96447 2.71447C3.02678 3.65215 2.5 4.92392 2.5 6.25C2.5 9.37062 5.96188 12.6206 7.12438 13.6244C7.23267 13.7058 7.3645 13.7498 7.5 13.7498C7.6355 13.7498 7.76733 13.7058 7.87562 13.6244Z"
+                    stroke="#2563EB"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 8.125C8.53553 8.125 9.375 7.28553 9.375 6.25C9.375 5.21447 8.53553 4.375 7.5 4.375C6.46447 4.375 5.625 5.21447 5.625 6.25C5.625 7.28553 6.46447 8.125 7.5 8.125Z"
+                    stroke="#2563EB"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">ENDEREÇO</p>
+                <p class="descricao-info">
+                  Av. Cinematográfica, 1985 Vila Ficção — São Paulo, SP CEP
+                  01310-100
+                </p>
+              </div>
+            </li>
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_1590)">
+                    <path
+                      d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.5 3.75V7.5L10 8.75"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_1590">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">HORÁRIO</p>
+                <p class="descricao-info">
+                  Seg–Sex: 9h–19h Sáb: 9h–14h Dom: Fechado
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1871896190382!2d-43.133260199999995!3d-22.9064655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e444e692b%3A0xfd5e35fb577af2f5!2sUFF%20-%20Instituto%20de%20Computa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1784312056861!5m2!1spt-BR!2sbr"
+                  width="401.61"
+                  height="176"
+                  style="border-radius: 16px; border: #2563eb26 solid 1px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <script type="module" src="../scripts/contato.js"></script>
     <script src="/scripts/nav.js"></script>
   </body>
 </html>
