@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Barlow Condensed, sans-serif;
+    background-color: #080b12; 
+    color: #5f6b80; 
+    margin: 0; 
+    padding: 0;
+
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;  
+    padding: 0 20px;
+}
+
+ 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.abas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6.5px;
+  margin-left: 24px;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #64748B;
+}
+
+.aba {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #64748b;
+  letter-spacing:2px;
+}
+
+.nomePagina {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  color: #2563eb;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.veiculo-nome{
+    color: #2563EB;
+    font-family: Barlow Condensed, serif;
+    font-size: 50px;
+} 
+
+.verificacao-card, .calendario-card {
+    background-color: #101520;  
+    border: 1px solid #1e2535;  
+    border-radius: 12px;
+    padding: 24px 32px;
+}
+
+.titulo-sessao {
+    color: #ffffff;  
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+ 
+.form-verificacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.grupo-datas {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+@media (min-width: 500px) {
+    .form-verificacao {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .grupo-datas {
+        flex-direction: row;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #5f6b80;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.input-dark {
+    background-color: #151a28;  
+    border: 1px solid #1e2535;
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    color-scheme: dark;
+}
+
+.input-dark:focus {
+    border-color: #00df8a;  
+}
+
+.btn-verificar {
+    background-color: #151a28;
+    color: #5f6b80;
+    border: 1px solid #1e2535;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 43px;
+}
+
+.btn-verificar:hover {
+    background-color: #1e2535; 
+    color: #ffffff;
+}
+
+.calendario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    border-radius: 13px;
+}
+
+.btn-nav {
+    background: transparent;
+    border: 1px solid #1e2535;
+    color: #5f6b80;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn-nav:hover {
+    background: #151a28;
+    color: #ffffff;
+}
+
+.calendario-legenda {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.item-legenda {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5f6b80;
+}
+
+.bolinha {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bolinha.disponivel { 
+    background-color: #0f2829; 
+    border: 1px solid #00df8a; 
+}
+.bolinha.reservado { 
+    background-color: #29181e; 
+    border: 1px solid #d15c5c; 
+}
+ 
+.dias-semana, .dias-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    text-align: center;
+}
+
+.dias-semana {
+    font-size: 12px;
+    margin-bottom: 16px;
+    color: #5f6b80;
+}
+
+.dias-semana abbr {
+    text-decoration: none;
+}
+
+.dia {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+/* Estado: Disponível */
+.dia.disponivel {
+    background-color: #0f2829; /* Fundo verde escuro */
+    color: #00df8a; /* Texto verde neon */
+    cursor: pointer;
+}
+
+.dia.disponivel:hover {
+    transform: scale(1.05);
+}
+
+.dia.reservado {
+    background-color: #29181e; 
+    color: #d15c5c; 
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.dia.vazio {
+    background-color: transparent;
+    pointer-events: none;
+}
