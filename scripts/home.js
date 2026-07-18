@@ -2,6 +2,18 @@ import { listarCarros } from "../scripts/api.js";
 
 let homeCardsDestaques = document.querySelector(".cards");
 let homeCars = document.querySelector(".cars");
+let rankingList = document.querySelector(".ranking-list");
+let btnExplorar = document.querySelector(".btn-explorarMais");
+let btnSaibaMais = document.querySelector(".btn-saiba-mais");
+
+btnExplorar?.addEventListener("click", () => {
+  window.location = "Catalogo.html";
+});
+
+btnSaibaMais?.addEventListener("click", () => {
+  window.location = "Sobre.html";
+});
+
 
 console.log(homeCardsDestaques);
 
@@ -54,9 +66,13 @@ function criarCard(carro) {
   if (disponibilidade.innerText != "disponivel") {
     buttonAlugar.innerText = "Indisponivel";
     buttonAlugar.disabled = true;
+    disponibilidade.innerText = "Indisponível";
+    disponibilidade.classList.add("indisponivel");
   } else {
     buttonAlugar.innerText = "Alugar";
     buttonAlugar.disabled = false;
+    disponibilidade.innerText = "Disponível";
+    disponibilidade.classList.add("disponivel");
   }
 
   divImg.append(imagem, category, disponibilidade);
@@ -75,15 +91,26 @@ function criarCard(carro) {
 function criarCardSimples(carro) {
   let li = document.createElement("li");
   li.classList.add("simple-card");
+
   let imagem = document.createElement("img");
   imagem.src = carro.url_imagem;
   imagem.classList.add("simple-img");
+
   let nome = document.createElement("h5");
   nome.innerText = carro.nome;
   nome.classList.add("simple-name");
+
   let status = document.createElement("p");
   status.classList.add("simple-status");
-  status.innerHTML = carro.status_disponibilidade;
+
+  if (carro.status_disponibilidade != "disponivel") {
+    status.innerText = "Indisponível";
+    status.classList.add("indisponivel");
+  } else {
+    status.innerText = "Disponível";
+    status.classList.add("disponivel");
+  }
+
   li.append(imagem, nome, status);
   return li;
 }
@@ -128,3 +155,73 @@ let carsHome = await listarCarros(home);
 
 renderizarImagensSimples(carsHome);
 renderizarImagens(destaques);
+
+function criarItemRanking(carro, posicao) {
+  let li = document.createElement("li");
+  li.classList.add("ranking-item");
+
+  let numero = document.createElement("p");
+  numero.classList.add("ranking-numero");
+  numero.innerText = String(posicao).padStart(2, "0");
+
+  let imagem = document.createElement("img");
+  imagem.classList.add("ranking-thumb");
+  imagem.src = carro.url_imagem;
+
+  let nome = document.createElement("p");
+  nome.classList.add("ranking-nome");
+  nome.innerText = carro.nome;
+
+  let subtitulo = document.createElement("p");
+  subtitulo.classList.add("ranking-subtitulo");
+  subtitulo.innerText = `${carro.universo_origem} (${carro.ano_obra})`;
+
+  let categoria = document.createElement("p");
+  categoria.classList.add("ranking-categoria", carro.categoria);
+  categoria.innerText = carro.categoria;
+
+  let status = document.createElement("p");
+  status.classList.add("ranking-status");
+  if (carro.status_disponibilidade != "disponivel") {
+    status.innerText = "Indisponível";
+    status.classList.add("indisponivel");
+  } else {
+    status.innerText = "Disponível";
+    status.classList.add("disponivel");
+  }
+
+  let preco = document.createElement("p");
+  preco.classList.add("ranking-preco");
+  preco.innerText = "R$ " + parseInt(carro.valor_aluguel_dia) + "/dia";
+
+  li.append(numero, imagem, nome, subtitulo, categoria, status, preco);
+
+  li.addEventListener("click", () => {
+    window.location = `individual.html?id=${carro.id}`;
+  });
+
+  return li;
+}
+
+function renderizarRanking(carros) {
+  if (!rankingList) return;
+  rankingList.innerHTML = "";
+  carros.forEach((carro, indice) => {
+    rankingList.appendChild(criarItemRanking(carro, indice + 1));
+  });
+}
+
+let numeroAleatorio3 = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+
+let ranking = {
+  pagina: numeroAleatorio3,
+  limite: 5,
+  nome: "",
+  disponibilidade: "",
+  filme: "",
+  categoria: "",
+};
+
+let maisProcurados = await listarCarros(ranking);
+
+renderizarRanking(maisProcurados);
