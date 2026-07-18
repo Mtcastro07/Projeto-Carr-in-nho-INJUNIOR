@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  background-color: #080c14;
+}
+.subtitulo {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  color: #2563eb;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 31px 0px 0px 24px;
+}
+
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: rgb(255, 255, 255);
+  color: white;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 8px 0px 4px 24px;
+}
+
+#nome,
+#email {
+  width: 278.1875;
+  height: 42;
+  border-radius: 16px;
+  border: 1px solid #2563eb26;
+  opacity: 1;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  background-color: #141d30;
+  color: white;
+
+  font-family: "Cousine", monospace;
+}
+
+.name-email {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+#nome::placeholder,
+#email::placeholder,
+#assunto::placeholder,
+#mensagem::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+textarea {
+  width: 572.390625;
+  height: 122;
+  color: white;
+  border-radius: 16px;
+  border: #2563eb26 solid 1px;
+  opacity: 1;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  margin-top: 6px;
+  background-color: #141d30;
+  resize: none;
+  box-sizing: border-box;
+  font-family: "Cousine", monospace;
+  outline: none;
+}
+
+#assunto {
+  width: 572.390625;
+  height: 42;
+  border-radius: 16px;
+  border: #2563eb26 solid 1px;
+  opacity: 1;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  background-color: #141d30;
+  color: white;
+  font-family: "Cousine", monospace;
+}
+form {
+  margin-left: 24px;
+  margin-top: 16px;
+  background-color: #0d1322;
+  width: fit-content;
+  height: 431px;
+  border-radius: 16px;
+  border: #2563eb26 solid 1px;
+  box-sizing: border-box;
+  opacity: 1;
+  padding: 24px;
+}
+input {
+  margin-top: 6px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Cousine", monospace;
+}
+label {
+  font-family: "Cousine", monospace;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#enviar {
+  display: block;
+  width: 572.390625;
+  height: 56;
+  border-radius: 16px;
+  opacity: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: rgb(255, 255, 255);
+  color: white;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 22px;
+  background-color: #2563eb;
+  transition: 0.1s;
+}
+
+#enviar:hover {
+  transition: 0.2s;
+  background-color: #3d7aff;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+}
+.icon-info {
+  display: flex;
+  width: 36;
+  height: 36;
+  border-radius: 16px;
+  opacity: 1;
+  background-color: #2563eb1a;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.titulo-info {
+  font-family: Cousine;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+  color: #64748b;
+  font-family: "Cousine", monospace;
+}
+
+.descricao-info {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.info {
+  width: 401.609375;
+  height: 82;
+  border-radius: 16px;
+  border-width: 1px;
+  gap: 16px;
+  opacity: 1;
+  padding: 20px;
+  background-color: #0d1322;
+  box-sizing: border-box;
+  border: #2563eb26 solid 1px;
+  margin-right: 24px;
+}
+
+.elementos-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.active {
+  justify-content: center;
+  align-items: center;
+}
+
+.info:nth-child(3) {
+  height: 100px;
+}
+
+.info:nth-child(4) {
+  height: 100px;
+}
