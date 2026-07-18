@@ -12,6 +12,7 @@ header {
   align-items: center;
   background-color: #080c14;
   color: white;
+  border-bottom: #2563eb26 solid 1px;
 }
 
 header div {
