@@ -6,9 +6,16 @@
       "universo_origem": "Carros (Pixar)",
       "ano_obra": 2006,
       "url_imagem": "https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png",
-      "status_disponibilidade": "disponivel",
+      "status_disponibilidade": "alugado",
       "valor_aluguel_dia": 850,
-      "locatario": null,
+      "locatario": {
+        "nome": "juju",
+        "documento": "3122133331231",
+        "email": "asaad@gmail.com",
+        "data_inicio_aluguel": "2007-08-27",
+        "data_devolucao_prevista": "2007-08-29",
+        "telefone": "23233333"
+      },
       "categoria": "desenho"
     },
     {
@@ -635,6 +642,31 @@
       "categoria": "série"
     }
   ],
-  "reservas": [],
+  "reservas": [
+    {
+      "carId": 1,
+      "nome": "Relâmpago McQueen",
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png",
+      "local": "Niteroi",
+      "status": "finalizado",
+      "duracao": "2",
+      "valor_total": "1700",
+      "data_inicio_aluguel": "2007-08-27",
+      "data_devolucao_prevista": "2007-08-29",
+      "id": 1
+    },
+    {
+      "carId": 1,
+      "nome": "Relâmpago McQueen",
+      "imagem": "https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png",
+      "local": "Niteroi",
+      "status": "finalizado",
+      "duracao": "0",
+      "valor_total": "R$ 0",
+      "data_inicio_aluguel": "2007-08-27",
+      "data_devolucao_prevista": "2007-08-29",
+      "id": 2
+    }
+  ],
   "mensagens": []
 }

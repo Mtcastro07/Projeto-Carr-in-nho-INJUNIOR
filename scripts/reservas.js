@@ -55,8 +55,12 @@ function reservaCard(dados) {
 
   divTituloStatus.append(titulo, status);
   divTextos.appendChild(divTituloStatus);
-  let info = `${dados.duracao} dias · R$ ${dados.valor_total} · ${dados.local}`;
-  let inicioFim = `${dados.data_inicio_aluguel} → ${dados.data_devolucao_prevista}`;
+  let info = document.createElement("p");
+  info.classList.add("info");
+  info.innerText = `${dados.duracao} dias · R$ ${dados.valor_total} · ${dados.local}`;
+  let inicioFim = document.createElement("p");
+  inicioFim.classList.add("inicioFim");
+  inicioFim.innerHTML = `${dados.data_inicio_aluguel} → ${dados.data_devolucao_prevista}`;
   divTextos.append(info, inicioFim);
   divElements.append(imagem);
   divElements.appendChild(divTextos);
