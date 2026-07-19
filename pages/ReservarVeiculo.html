@@ -1,92 +1,144 @@
-  <!-- ===================== HEAD ===================== -->
-
-<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Styles/home.css" />
-    <link rel="stylesheet" href="/Styles/nav.css" />
-    <link rel="stylesheet" href="/Styles/footer.css" />
+    <link rel="stylesheet" href="../Styles/nav.css" />
+    <link rel="stylesheet" href="../Styles/reservar-veiculo.css" />
+    <link rel="stylesheet" href="../Styles/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"> <!-- #Puxando fontes -->
     <link href="https://googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>Alugue um Carr{IN}nho</title>
+    <title>Reserva</title>
   </head>
-
   <body>
 
-    <!-- ===================== HEADER ===================== -->
-
     <header>
-
       <div>
         <img src="/assets/image.png" width="64" />
         <h1>Carr{IN}hos</h1>
       </div>
-
       <nav>
         <ul>
-          <li><a href="home.html" class="active">Início</a></li>
+          <li><a href="home.html">Início</a></li>
           <li><a href="Catalogo.html">Catálogo</a></li>
-          <li><a href="Reservas.html">Reservas</a></li>
+          <li><a href="Reservas.html" class="active">Reservas</a></li>
           <li><a href="Sobre.html">Sobre</a></li>
           <li><a href="Contato.html">Contato</a></li>
         </ul>
       </nav>
-
       <button><img src="/assets/image.png" width="32" />Explorar</button>
-
     </header>
 
-    <!-- ===================== CONTENT ===================== -->
+    <main class="reservation-page">
 
-    <main>
-      <section class="welcome">
-        <div>
-          <p>A locadora do universo fictício</p>
-          <h1>DIRIJA OS <span>VEÍCULOS</span> MAIS FAMOSOS</h1>
-          <p>
-            Alugue carros lendários de filmes, séries e desenhos animados. Uma
-            experiência cinematográfica real
-          </p>
-          <div>
-            <button>Explorar veículos</button>
-            <button>Saiba mais</button>
-          </div>
-          <div>
-            <div>
-              <h1>8+</h1>
-              <p>veículos icônicos</p>
-            </div>
-            <div>
-              <h1>24h</h1>
-              <p>suporte ativo</p>
-            </div>
-            <div>
-              <h1>100%</h1>
-              <p>experiência única</p>
-            </div>
-          </div>
-        </div>
-        <div class="cars-display">
-          <ul class="cars"></ul>
-        </div>
-      </section>
-      <section class="destaques">
-        <p>DESTAQUES</p>
-        <h3>VEÍCULOS EM DESTAQUE</h3>
-        <div class="destaques-grid">
-          <ul class="cards"></ul>
-        </div>
-      </section>
+      <span class="subtitle">RESERVA</span>
+
+      <h1>RESERVAR VEÍCULO</h1>
+
+      <div class="reservation-content">
+
+          <!-- ================= ESQUERDA ================= -->
+
+          <section class="reservation-left">
+
+              <form class="reservation-box">
+
+                  <h2>Dados Pessoais</h2>
+
+                  <div class="inputs-grid">
+
+                      <div class="input-group">
+                          <label>NOME COMPLETO</label>
+                          <input id="nome" type="text" placeholder="João Silva">
+                      </div>
+
+                      <div class="input-group">
+                          <label>CPF</label>
+                          <input id="CPF" type="text" placeholder="000.000.000-00">
+                      </div>
+
+                      <div class="input-group">
+                          <label>E-MAIL</label>
+                          <input id="email" type="email" placeholder="joao@email.com">
+                      </div>
+
+                      <div class="input-group">
+                          <label>TELEFONE</label>
+                          <input id="telefone" type="text" placeholder="(11) 99999-9999">
+                      </div>
+
+                  </div>
+
+              </form>
+
+              <form class="reservation-box">
+
+                  <h2>Dados da Reserva</h2>
+
+                  <div class="inputs-grid">
+
+                      <div class="input-group">
+                          <label>VEÍCULO</label>
+                          <input id="veiculo" class="inputs" placeholder="Aston Martin DB5" readonly>
+                      </div>
+
+                      <div class="input-group">
+                          <label>LOCAL DE RETIRADA</label>
+                          <input id="local" class="inputs" type="text">
+                      </div>
+
+                      <div class="input-group">
+                          <label>DATA DE RETIRADA</label>
+                          <input id="retirada" class="inputs" type="date">
+                      </div>
+
+                      <div class="input-group">
+                          <label>DATA DE DEVOLUÇÃO</label>
+                          <input id="devolucao" class="inputs" type="date">
+                      </div>
+
+                  </div>
+
+              </form>
+
+              <button class="btn-reservar">CONFIRMAR RESERVA</button>
+
+          </section>
+
+          <!-- ================= DIREITA ================= -->
+
+          <aside class="reservation-summary">
+
+              <span class="summary-title">RESUMO</span>
+              <div class="container-image">
+                <img class="img"  alt="Imagem do carro">
+                <h3 class="name">Aston Martin DB5</h3>
+              </div>
+
+              <div class="summary-line">
+                  <span>Diária</span>
+                  <span class="value">R$ 0</span>
+              </div>
+
+              <div class="summary-line">
+                  <span>Dias</span>
+                  <span class="days-count">0</span>
+              </div>
+
+              <hr>
+
+              <div class="summary-total">
+                  <span>Total</span>
+                  <span class="total-value">R$ 0</span>
+              </div>
+
+          </aside>
+      </div>
     </main>
-
-    <!-- ===================== FOOTER ===================== -->
+        <!-- ===================== FOOTER ===================== -->
 
     <footer class="footer">
 

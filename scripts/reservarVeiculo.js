@@ -1,6 +1,6 @@
-import { buscarCarro } from "../scripts/api.js";
-import { salvarAluguel } from "../scripts/api.js";
-import { reservarLocatario } from "../scripts/api.js";
+import { buscarCarro } from "./api.js";
+import { salvarAluguel } from "./api.js";
+import { reservarLocatario } from "./api.js";
 
 let dataRetiradaValue = document.querySelector("#retirada");
 let dataDevolucaoValue = document.querySelector("#devolucao");
@@ -82,5 +82,5 @@ botaoReservar.addEventListener("click", async (event) => {
 
   await reservarLocatario(id, dadosLocatario);
   await salvarAluguel(dadosReserva);
-  window.location = "Reservas.html";
+  window.location = "ReservarVeiculo.html";
 });
