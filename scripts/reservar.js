@@ -26,7 +26,7 @@ nomeVeiculo.innerText = carro.nome;
 nomeInputVeiculo.placeholder = carro.nome;
 
 function validarReserva(dias) {
-  if (dias < 0) {
+  if (dias < 0 || (valorTotal.innerText = "NaN")) {
     botaoReservar.innerText = "Indisponivel";
     botaoReservar.disabled = true;
     valorTotal.innerText = 0;
@@ -82,5 +82,5 @@ botaoReservar.addEventListener("click", async (event) => {
 
   await reservarLocatario(id, dadosLocatario);
   await salvarAluguel(dadosReserva);
-  window.location = "ReservarVeiculo.html";
+  window.location = "Reservas.html";
 });
