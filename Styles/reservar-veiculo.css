@@ -449,3 +449,149 @@ body{
     color: #2563EB;
 
 }
+
+/* ===================== RESPONSIVINESS ===================== */
+
+@media (max-width: 1500px){
+
+    .reservation-page{
+
+        width: calc(100% - 200px);
+        margin: 32px;
+
+    }
+}
+
+@media (max-width: 1024px){
+
+    .reservation-page{
+
+        width: 80%;
+        margin: 32px;
+
+    }
+
+    .reservation-page h1{
+
+        font-size: 48px;
+        line-height: 48px;
+
+    }
+
+    .reservation-page .reservation-content{
+
+        grid-template-columns: 1fr;
+        gap: 32px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-summary{
+
+        order: -1;
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .reservation-page{
+
+        width: 80%;
+        margin-left: 20px;
+
+    }
+
+    .reservation-page h1{
+
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 32px;
+
+    }
+
+    .reservation-page .reservation-content{
+
+        grid-template-columns: 1fr;
+        gap: 24px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-left .reservation-box{
+
+        padding: 20px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-left .reservation-box .inputs-grid{
+
+        grid-template-columns: 1fr;
+        gap: 16px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-summary{
+
+        padding: 16px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-summary .img{
+
+        height: 200px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-left .btn-reservar{
+
+        height: 56px;
+        font-size: 18px;
+
+    }
+
+}
+
+@media (max-width: 640px){
+
+    .reservation-page{
+
+        width: 80%;
+        margin-left: 20px;
+
+    }
+
+    .reservation-page h1{
+
+        font-size: 30px;
+        line-height: 34px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-left .reservation-box{
+
+        padding: 16px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-left .reservation-box h2{
+
+        font-size: 18px;
+        margin-bottom: 20px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-summary .name{
+
+        font-size: 16px;
+        left: 10px;
+        bottom: 22px;
+
+    }
+
+    .reservation-page .reservation-content .reservation-summary .summary-total .total-value{
+
+        font-size: 18px;
+
+    }
+
+}
