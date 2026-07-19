@@ -635,42 +635,6 @@
       "categoria": "série"
     }
   ],
-  "reservas": [
-    {
-      "carId": 1,
-      "nome": "Relâmpago McQueen",
-      "imagem": "https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png",
-      "local": "dasdsadawddadadasda",
-      "status": "cancelado",
-      "duracao": "4",
-      "valor_total": "3400",
-      "data_inicio_aluguel": "2026-07-19",
-      "data_devolucao_prevista": "2026-07-23",
-      "id": 1
-    },
-    {
-      "carId": 4,
-      "nome": "Sally Carrera",
-      "imagem": "https://static.wikia.nocookie.net/carros/images/e/e1/Sally_Carrera.png/revision/latest?cb=20200122035435&path-prefix=pt-br",
-      "local": "fasdafsasfasfasfsaf",
-      "status": "finalizado",
-      "duracao": "1",
-      "valor_total": "750",
-      "data_inicio_aluguel": "2026-07-06",
-      "data_devolucao_prevista": "2026-07-07",
-      "id": 2
-    },
-    {
-      "carId": 6,
-      "nome": "Batmóvel Clássico",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj6FRkg8rtL5scmZRtodBahtw2xcu1zvxCqC1_NFoVQvFatDSQIpGyw7gN&s=10",
-      "local": "gsdgsdfg",
-      "status": "finalizado",
-      "duracao": "1",
-      "valor_total": "1900",
-      "data_inicio_aluguel": "2026-07-14",
-      "data_devolucao_prevista": "2026-07-15",
-      "id": 3
-    }
-  ]
+  "reservas": [],
+  "mensagens": []
 }

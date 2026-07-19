@@ -5,12 +5,7 @@ let buscar = document.querySelector(".buscador");
 let quantidade = document.querySelector(".quantidade");
 let paginacao = document.querySelectorAll(".page");
 
-<<<<<<< HEAD
-//Função utilizada para criar os card
 function criarCard(carro) {
-=======
-export function criarCard(carro) {
->>>>>>> matheusBranch
   let linha = document.createElement("li");
   linha.classList.add("card");
 

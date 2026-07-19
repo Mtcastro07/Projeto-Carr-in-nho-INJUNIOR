@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/Styles/nav.css">
+    <link rel="stylesheet" href="/Styles/agenda.css">
+    <link rel="stylesheet" href="/Styles/home.css">
+    <title>Agenda de Reservas - Carr{IN}hos</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <svg class="icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.875 10.625H13.125C13.5 10.625 13.75 10.375 13.75 10V8.125C13.75 7.5625 13.3125 7.0625 12.8125 6.9375C11.6875 6.625 10 6.25 10 6.25C10 6.25 9.1875 5.375 8.625 4.8125C8.3125 4.5625 7.9375 4.375 7.5 4.375H3.125C2.75 4.375 2.4375 4.625 2.25 4.9375L1.375 6.75C1.29224 6.99139 1.25 7.24482 1.25 7.5V10C1.25 10.375 1.5 10.625 1.875 10.625H3.125"
+                    stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M4.375 11.875C5.06536 11.875 5.625 11.3154 5.625 10.625C5.625 9.93464 5.06536 9.375 4.375 9.375C3.68464 9.375 3.125 9.93464 3.125 10.625C3.125 11.3154 3.68464 11.875 4.375 11.875Z"
+                    stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.625 10.625H9.375" stroke="white" stroke-width="1.25" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M10.625 11.875C11.3154 11.875 11.875 11.3154 11.875 10.625C11.875 9.93464 11.3154 9.375 10.625 9.375C9.93464 9.375 9.375 9.93464 9.375 10.625C9.375 11.3154 9.93464 11.875 10.625 11.875Z"
+                    stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h2>Carr<span class="in">{In}</span>hos</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="buttonNav">
+                    <a href="home.html">Início</a>
+                </li>
+                <li class="buttonNav"><a href="Catalogo.html">Catálogo</a></li>
+                <li class="buttonNav"><a href="Reservas.html">Reservas</a></li>
+                <li class="buttonNav"><a href="Sobre.html">Sobre</a></li>
+                <li class="buttonNav"><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn-explorar" href="../pages/Catalogo.html">
+            <svg class="icon-explorar" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10.2917 9.20833H11.375C11.7 9.20833 11.9167 8.99167 11.9167 8.66667V7.04167C11.9167 6.55417 11.5375 6.12083 11.1042 6.0125C10.1292 5.74167 8.66668 5.41667 8.66668 5.41667C8.66668 5.41667 7.96251 4.65833 7.47501 4.17083C7.20418 3.95417 6.87918 3.79167 6.50001 3.79167H2.70834C2.38334 3.79167 2.11251 4.00833 1.95001 4.27917L1.19168 5.85C1.11995 6.0592 1.08334 6.27884 1.08334 6.5V8.66667C1.08334 8.99167 1.30001 9.20833 1.62501 9.20833H2.70834"
+                    stroke="white" stroke-width="1.08333" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M3.79168 10.2917C4.38999 10.2917 4.87501 9.80664 4.87501 9.20833C4.87501 8.61002 4.38999 8.125 3.79168 8.125C3.19337 8.125 2.70834 8.61002 2.70834 9.20833C2.70834 9.80664 3.19337 10.2917 3.79168 10.2917Z"
+                    stroke="white" stroke-width="1.08333" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4.875 9.20833H8.125" stroke="white" stroke-width="1.08333" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M9.20833 10.2917C9.80664 10.2917 10.2917 9.80664 10.2917 9.20833C10.2917 8.61002 9.80664 8.125 9.20833 8.125C8.61002 8.125 8.125 8.61002 8.125 9.20833C8.125 9.80664 8.61002 10.2917 9.20833 10.2917Z"
+                    stroke="white" stroke-width="1.08333" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Explorar
+        </button>
+    </header>
+    </header>
+
+    <main class="container-principal">
+
+        <a href="../pages/Individual.html" id="voltarIndividual">
+            <p class="aba">Voltar para Veículo</p>
+        </a>
+        
+        <section>
+            <h5 style="color: #2563EB;font-family: Barlow Condensed, serif;letter-spacing:2px">DISPONIBILIDADE</h3>
+        </section>
+
+        <section>
+            <h3 style="color: #FFFFFF;font-family: Barlow Condensed, serif;font-size: 50px;">AGENDA</h3>
+            <h3 class="veiculo-nome">VEÍCULO</h3>
+        </section>
+
+        <section class="verificacao-card" aria-labelledby="titulo-verificacao">
+            <h2 id="titulo-verificacao" class="titulo-sessao">Verificar Disponibilidade</h2>
+
+            <form class="form-verificacao" id="form-verificacao">
+
+                <fieldset class="grupo-datas">
+                    <legend class="sr-only">Período de reserva</legend>
+
+                    <div class="input-group">
+                        <label for="data-retirada">DATA DE RETIRADA</label>
+                        <input type="date" id="data-retirada" class="input-dark" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="data-devolucao">DATA DE DEVOLUÇÃO</label>
+                        <input type="date" id="data-devolucao" class="input-dark" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="btn-verificar" class="btn-verificar">Verificar</button>
+
+            </form>
+        </section>
+
+        <section class="calendario-card" aria-label="Calendário de Reservas">
+            <header class="calendario-header">
+                <button type="button" id="btn-prev" class="btn-nav" aria-label="Mês anterior">&lt;</button>
+
+                <h3 id="mes-ano" aria-live="polite">Carregando...</h3>
+
+                <button type="button" id="btn-next" class="btn-nav" aria-label="Próximo mês">&gt;</button>
+            </header>
+
+            <ul class="calendario-legenda">
+
+                <li class="item-legenda">
+                    <span class="bolinha disponivel" aria-hidden="true"></span> Disponível
+                </li>
+
+                <li class="item-legenda">
+                    <span class="bolinha reservado" aria-hidden="true"></span> Reservado
+                </li>
+
+            </ul>
+
+            <ul class="dias-semana" aria-hidden="true">
+                <li><abbr title="Domingo">Dom</abbr></li>
+                <li><abbr title="Segunda-feira">Seg</abbr></li>
+                <li><abbr title="Terça-feira">Ter</abbr></li>
+                <li><abbr title="Quarta-feira">Qua</abbr></li>
+                <li><abbr title="Quinta-feira">Qui</abbr></li>
+                <li><abbr title="Sexta-feira">Sex</abbr></li>
+                <li><abbr title="Sábado">Sáb</abbr></li>
+            </ul>
+
+            <div class="dias-grid" id="dias-grid" role="grid" aria-label="Dias do mês"></div>
+        </section>
+
+    </main>
+
+    <script type="module" src="../scripts/agenda.js"></script>
+
+</body>
+
+<footer class="footer">
+
+      <div class="footer-top"></div>
+
+      <div class="footer-content">
+
+          <div class="footer-brand">
+
+              <a class= "logo" href="este-site">
+                  <img src="../assets/images/mini-cart.svg" alt="Carrinho">
+                  <h2>Carr<span>{In}</span>hos</h2>
+              </a>
+
+              <p>
+                  A única plataforma de aluguel de
+                  veículos icônicos do entretenimento
+                  mundial.
+              </p>
+
+              <div class="social-media">
+
+                  <a href="https://www.instagram.com/">
+                      IG
+                  </a>
+
+                  <a href="https://x.com/">
+                      TW
+                  </a>
+
+                  <a href="https://www.youtube.com/">
+                      YT
+                  </a>
+
+                  <a href="https://www.tiktok.com/">
+                      TK
+                  </a>
+
+              </div>
+
+          </div>
+
+          <div class="footer-column">
+
+              <h4>PLATAFORMA</h4>
+
+              <a href="#">Catálogo</a>
+              <a href="#">Minhas Reservas</a>
+              <a href="#">Como Funciona</a>
+              <a href="#">Preços</a>
+
+          </div>
+
+          <div class="footer-column">
+
+              <h4>EMPRESA</h4>
+
+              <a href="#">Sobre Nós</a>
+              <a href="#">Contato</a>
+              <a href="#">Blog</a>
+              <a href="#">Parceiros</a>
+
+          </div>
+
+          <div class="footer-column" id="contact-items-div">
+
+              <h4>CONTATO</h4>
+
+                <div class="contact-item">
+                    <img src="../assets/images/mini-phone.svg">
+                    <span>+55 (11) 3456-7890</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="../assets/images/mini-email.svg">
+                    <span>oi@carrinhos.com.br</span>
+                </div>
+
+                <div class="contact-item">
+
+                    <img src="../assets/images/mini-local-point.svg">
+                    <span>
+                        Av. Cinematográfica, 1985
+                        <br>
+                        Vila Ficção — São Paulo, SP
+                    </span>
+                </div>
+              </div>
+          </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+          <span>
+              © 2025 Carr{In}hos — Todos os direitos reservados.
+          </span>
+
+          <span>
+              Projeto educacional • Veículos fictícios
+          </span>
+
+      </div>
+
+    </footer>
+
+</html>

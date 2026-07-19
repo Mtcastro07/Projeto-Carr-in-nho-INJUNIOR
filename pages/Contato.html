@@ -2,35 +2,310 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/Styles/contato.css" />
     <link rel="stylesheet" href="/Styles/nav.css" />
 
-    <title>Catálogo</title>
+    <title>Contato</title>
   </head>
   <body>
     <header>
-      <div>
-        <img src="/assets/image.png" width="64" />
-        <h1>Carr{IN}hos</h1>
+      <div class="title">
+        <svg
+          class="icon"
+          width="15"
+          height="15"
+          viewBox="0 0 15 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.875 10.625H13.125C13.5 10.625 13.75 10.375 13.75 10V8.125C13.75 7.5625 13.3125 7.0625 12.8125 6.9375C11.6875 6.625 10 6.25 10 6.25C10 6.25 9.1875 5.375 8.625 4.8125C8.3125 4.5625 7.9375 4.375 7.5 4.375H3.125C2.75 4.375 2.4375 4.625 2.25 4.9375L1.375 6.75C1.29224 6.99139 1.25 7.24482 1.25 7.5V10C1.25 10.375 1.5 10.625 1.875 10.625H3.125"
+            stroke="white"
+            stroke-width="1.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.375 11.875C5.06536 11.875 5.625 11.3154 5.625 10.625C5.625 9.93464 5.06536 9.375 4.375 9.375C3.68464 9.375 3.125 9.93464 3.125 10.625C3.125 11.3154 3.68464 11.875 4.375 11.875Z"
+            stroke="white"
+            stroke-width="1.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M5.625 10.625H9.375"
+            stroke="white"
+            stroke-width="1.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10.625 11.875C11.3154 11.875 11.875 11.3154 11.875 10.625C11.875 9.93464 11.3154 9.375 10.625 9.375C9.93464 9.375 9.375 9.93464 9.375 10.625C9.375 11.3154 9.93464 11.875 10.625 11.875Z"
+            stroke="white"
+            stroke-width="1.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <h2>Carr<span class="in">{In}</span>hos</h2>
       </div>
       <nav>
         <ul>
-          <li><a href="home.html">Início</a></li>
-          <li><a href="Catalogo.html">Catálogo</a></li>
-          <li><a href="Reservas.html">Reservas</a></li>
-          <li><a href="Sobre.html">Sobre</a></li>
-          <li><a href="Contato.html" class="active">Contato</a></li>
+          <li class="buttonNav">
+            <a href="home.html">Início</a>
+          </li>
+          <li class="buttonNav"><a href="Catalogo.html">Catálogo</a></li>
+          <li class="buttonNav"><a href="Reservas.html">Reservas</a></li>
+          <li class="buttonNav"><a href="Sobre.html">Sobre</a></li>
+          <li class="buttonNav">
+            <a href="Contato.html" class="active">Contato</a>
+          </li>
         </ul>
       </nav>
-      <button><img src="/assets/image.png" width="32" />Explorar</button>
+      <button class="btn-explorar" href="../pages/Catalogo.html">
+        <svg
+          class="icon-explorar"
+          width="13"
+          height="13"
+          viewBox="0 0 13 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.2917 9.20833H11.375C11.7 9.20833 11.9167 8.99167 11.9167 8.66667V7.04167C11.9167 6.55417 11.5375 6.12083 11.1042 6.0125C10.1292 5.74167 8.66668 5.41667 8.66668 5.41667C8.66668 5.41667 7.96251 4.65833 7.47501 4.17083C7.20418 3.95417 6.87918 3.79167 6.50001 3.79167H2.70834C2.38334 3.79167 2.11251 4.00833 1.95001 4.27917L1.19168 5.85C1.11995 6.0592 1.08334 6.27884 1.08334 6.5V8.66667C1.08334 8.99167 1.30001 9.20833 1.62501 9.20833H2.70834"
+            stroke="white"
+            stroke-width="1.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M3.79168 10.2917C4.38999 10.2917 4.87501 9.80664 4.87501 9.20833C4.87501 8.61002 4.38999 8.125 3.79168 8.125C3.19337 8.125 2.70834 8.61002 2.70834 9.20833C2.70834 9.80664 3.19337 10.2917 3.79168 10.2917Z"
+            stroke="white"
+            stroke-width="1.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.875 9.20833H8.125"
+            stroke="white"
+            stroke-width="1.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.20833 10.2917C9.80664 10.2917 10.2917 9.80664 10.2917 9.20833C10.2917 8.61002 9.80664 8.125 9.20833 8.125C8.61002 8.125 8.125 8.61002 8.125 9.20833C8.125 9.80664 8.61002 10.2917 9.20833 10.2917Z"
+            stroke="white"
+            stroke-width="1.08333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Explorar
+      </button>
     </header>
-
-    <main></main>
-    <script type="module" src="../scripts/catalogo.js"></script>
+    <main>
+      <p class="subtitulo">FALE CONOSCO</p>
+      <h1>CONTATO</h1>
+      <div class="elementos-main">
+        <section class="form-info">
+          <form>
+            <div class="name-email">
+              <div>
+                <label>NOME</label>
+                <br />
+                <input id="nome" type="text" placeholder="Seu nome" />
+              </div>
+              <div>
+                <label>E-MAIL</label>
+                <br />
+                <input id="email" type="email" placeholder="Seu@email.com" />
+              </div>
+            </div>
+            <div>
+              <label>ASSUNTO</label>
+              <br />
+              <input
+                id="assunto"
+                type="text"
+                placeholder="Como podemos ajudar?"
+              />
+            </div>
+            <div>
+              <label>MENSAGEM</label>
+              <br />
+              <textarea
+                id="mensagem"
+                placeholder="Descreva sua dúvida ou sugestão..."
+              ></textarea>
+            </div>
+            <button type="submit" id="enviar">ENVIAR MENSAGEM</button>
+          </form>
+        </section>
+        <aside>
+          <ul class="infos">
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_1558)">
+                    <path
+                      d="M13.7499 10.575V12.45C13.7506 12.6241 13.7149 12.7964 13.6452 12.9558C13.5755 13.1153 13.4732 13.2585 13.3449 13.3762C13.2167 13.4938 13.0653 13.5834 12.9004 13.6392C12.7355 13.695 12.5608 13.7157 12.3874 13.7C10.4642 13.491 8.61677 12.8338 6.99365 11.7812C5.48354 10.8217 4.20323 9.54136 3.24365 8.03125C2.18738 6.40075 1.53005 4.54437 1.3249 2.6125C1.30928 2.43967 1.32982 2.26547 1.38521 2.10101C1.4406 1.93655 1.52963 1.78543 1.64663 1.65726C1.76362 1.5291 1.90603 1.42669 2.06477 1.35658C2.22351 1.28646 2.39511 1.25016 2.56865 1.25H4.44365C4.74696 1.24701 5.04102 1.35442 5.271 1.55221C5.50098 1.74999 5.6512 2.02465 5.69365 2.325C5.77279 2.92504 5.91955 3.5142 6.13115 4.08125C6.21524 4.30495 6.23344 4.54807 6.18359 4.7818C6.13374 5.01553 6.01794 5.23007 5.8499 5.4L5.05615 6.19375C5.94587 7.75847 7.24143 9.05403 8.80615 9.94375L9.5999 9.15C9.76983 8.98196 9.98437 8.86616 10.2181 8.81631C10.4518 8.76646 10.6949 8.78466 10.9186 8.86875C11.4857 9.08034 12.0749 9.22711 12.6749 9.30625C12.9785 9.34908 13.2558 9.502 13.454 9.73593C13.6522 9.96986 13.7575 10.2685 13.7499 10.575Z"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_1558">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">TELEFONE</p>
+                <p class="descricao-info">+55 (11) 3456-7890</p>
+              </div>
+            </li>
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_1568)">
+                    <path
+                      d="M12.5 2.5H2.5C1.80964 2.5 1.25 3.05964 1.25 3.75V11.25C1.25 11.9404 1.80964 12.5 2.5 12.5H12.5C13.1904 12.5 13.75 11.9404 13.75 11.25V3.75C13.75 3.05964 13.1904 2.5 12.5 2.5Z"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.75 4.375L8.14375 7.9375C7.95079 8.05839 7.7277 8.12251 7.5 8.12251C7.2723 8.12251 7.04921 8.05839 6.85625 7.9375L1.25 4.375"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_1568">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">E-MAIL</p>
+                <p class="descricao-info">oi@carrinhos.com.br</p>
+              </div>
+            </li>
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.87562 13.6244C9.03813 12.6206 12.5 9.37062 12.5 6.25C12.5 4.92392 11.9732 3.65215 11.0355 2.71447C10.0979 1.77678 8.82608 1.25 7.5 1.25C6.17392 1.25 4.90215 1.77678 3.96447 2.71447C3.02678 3.65215 2.5 4.92392 2.5 6.25C2.5 9.37062 5.96188 12.6206 7.12438 13.6244C7.23267 13.7058 7.3645 13.7498 7.5 13.7498C7.6355 13.7498 7.76733 13.7058 7.87562 13.6244Z"
+                    stroke="#2563EB"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 8.125C8.53553 8.125 9.375 7.28553 9.375 6.25C9.375 5.21447 8.53553 4.375 7.5 4.375C6.46447 4.375 5.625 5.21447 5.625 6.25C5.625 7.28553 6.46447 8.125 7.5 8.125Z"
+                    stroke="#2563EB"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">ENDEREÇO</p>
+                <p class="descricao-info">
+                  Av. Cinematográfica, 1985 Vila Ficção — São Paulo, SP CEP
+                  01310-100
+                </p>
+              </div>
+            </li>
+            <li class="info">
+              <div class="icon-info">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_3_1590)">
+                    <path
+                      d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.5 3.75V7.5L10 8.75"
+                      stroke="#2563EB"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_1590">
+                      <rect width="15" height="15" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="texto-info">
+                <p class="titulo-info">HORÁRIO</p>
+                <p class="descricao-info">
+                  Seg–Sex: 9h–19h Sáb: 9h–14h Dom: Fechado
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1871896190382!2d-43.133260199999995!3d-22.9064655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e444e692b%3A0xfd5e35fb577af2f5!2sUFF%20-%20Instituto%20de%20Computa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1784312056861!5m2!1spt-BR!2sbr"
+                  width="401.61"
+                  height="176"
+                  style="border-radius: 16px; border: #2563eb26 solid 1px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <script type="module" src="../scripts/contato.js"></script>
+    <script src="/scripts/nav.js"></script>
   </body>
 </html>
