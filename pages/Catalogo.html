@@ -8,7 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/Styles/nav.css" />
+    <link rel="stylesheet" href="../Styles/nav.css" />
+    <link rel="stylesheet" href="../Styles/catalogo.css" />
     <title>Catálogo</title>
   </head>
   <body>
@@ -110,9 +111,9 @@
     </header>
 
     <main>
-      <p>Catalogo</p>
+      <p>Catálogo</p>
       <h1>TODOS OS VEÍCULOS</h1>
-      <p><span class="quantidade">0</span> veiculos encontrados</p>
+      <p><span class="quantidade">0</span> veículos encontrados</p>
       <div class="filtros">
         <input
           class="buscador"
@@ -121,8 +122,8 @@
         />
         <div class="btns-categories" style="display: flex; flex-direction: row">
           <button class="btn-category" id="">Todos</button>
-          <button class="btn-category" id="disponivel">Disponivel</button>
-          <button class="btn-category" id="indisponivel">Indisponivel</button>
+          <button class="btn-category" id="disponivel">Disponível</button>
+          <button class="btn-category" id="indisponivel">Indisponível</button>
           <button class="btn-category" id="filme">Filme</button>
           <button class="btn-category" id="série">Série</button>
           <button class="btn-category" id="desenho">Desenho</button>
@@ -130,13 +131,112 @@
       </div>
       <ul class="list-cars"></ul>
       <div class="pages" style="display: flex; flex-direction: row">
+        <button class="page-nav" id="pagina-anterior">‹</button>
         <button class="page">1</button>
         <button class="page">2</button>
         <button class="page">3</button>
         <button class="page">4</button>
         <button class="page">5</button>
+        <button class="page-nav" id="pagina-proxima">›</button>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer-top"></div>
+      <div class="footer-content">
+          <div class="footer-brand">
+
+              <a class= "logo" href="home.html">
+                  <img src="../assets/images/mini-cart.svg" alt="Carrinho">
+                  <h2>Carr<span>{In}</span>hos</h2>
+              </a>
+
+              <p>
+                  A única plataforma de aluguel de
+                  veículos icônicos do entretenimento
+                  mundial.
+              </p>
+
+              <div class="social-media">
+
+                  <a href="https://www.instagram.com/">
+                      IG
+                  </a>
+
+                  <a href="https://x.com/">
+                      TW
+                  </a>
+
+                  <a href="https://www.youtube.com/">
+                      YT
+                  </a>
+
+                  <a href="https://www.tiktok.com/">
+                      TK
+                  </a>
+
+              </div>
+
+          </div>
+          <div class="footer-column">
+
+              <h4>PLATAFORMA</h4>
+
+              <a href="Catalogo.html">Catálogo</a>
+              <a href="Reservas.html">Minhas Reservas</a>
+              <a href="home.html">Como Funciona</a>
+              <a href="Catalogo.html">Preços</a>
+
+          </div>
+          <div class="footer-column">
+
+              <h4>EMPRESA</h4>
+
+              <a href="Sobre.html">Sobre Nós</a>
+              <a href="Contato.html">Contato</a>
+              <a href="#">Blog</a>
+              <a href="#">Parceiros</a>
+
+          </div>
+          <div class="footer-column" id="contact-items-div">
+
+              <h4>CONTATO</h4>
+
+                <div class="contact-item">
+                    <img src="../assets/images/mini-phone.svg">
+                    <span>+55 (11) 3456-7890</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="../assets/images/mini-email.svg">
+                    <span>oi@carrinhos.com.br</span>
+                </div>
+
+                <div class="contact-item">
+
+                    <img src="../assets/images/mini-local-point.svg">
+                    <span>
+                        Av. Cinematográfica, 1985
+                        <br>
+                        Vila Ficção — São Paulo, SP
+                    </span>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+
+          <span>
+              © 2025 Carr{In}hos — Todos os direitos reservados.
+          </span>
+
+          <span>
+              Projeto educacional • Veículos fictícios
+          </span>
+        </div>
+    </footer>
+
     <script type="module" src="../scripts/catalogo.js"></script>
     <script src="../scripts/nav.js"></script>
   </body>
