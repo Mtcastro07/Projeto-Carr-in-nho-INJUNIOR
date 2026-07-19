@@ -452,11 +452,11 @@ body{
 
 /* ===================== RESPONSIVINESS ===================== */
 
-@media (max-width: 1500px){
+@media (max-width: 1600px){
 
     .reservation-page{
 
-        width: calc(100% - 200px);
+        width: calc(100% - 300px);
         margin: 32px;
 
     }
