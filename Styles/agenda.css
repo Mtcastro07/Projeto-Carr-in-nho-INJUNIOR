@@ -86,6 +86,7 @@ a {
     color: #2563EB;
     font-family: Barlow Condensed, serif;
     font-size: 50px;
+    text-transform: uppercase;
 } 
 
 .verificacao-card, .calendario-card {
